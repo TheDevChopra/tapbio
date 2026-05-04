@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  
+  --muted: #f3f4f6; /* gray-100 */
+  --muted-foreground: #6b7280; /* gray-500 */
+  
+  --accent: #2563eb; /* blue-600 */
+  --accent-hover: #1d4ed8; /* blue-700 */
+
+  --border: #e5e7eb; /* gray-200 */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-border: var(--border);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+[data-theme="dark"] {
+  --background: #000000;
+  --foreground: #ffffff;
+  --muted: #111111;
+  --muted-foreground: #a3a3a3;
+  --border: #262626;
+}
+
+/* Accent Colors */
+[data-accent="blue"] {
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+}
+
+[data-accent="purple"] {
+  --accent: #9333ea;
+  --accent-hover: #7e22ce;
+}
+
+[data-accent="black"] {
+  --accent: #000000;
+  --accent-hover: #171717;
+}
+
+[data-theme="dark"][data-accent="black"] {
+  --accent: #ffffff;
+  --accent-hover: #e5e5e5;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
