@@ -1,5 +1,6 @@
 'use client';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function AnalyticsTab({ blocks, analytics }: { blocks: any[], analytics: { views: number, clicks: Record<string, number> } }) {
   const totalClicks = Object.values(analytics.clicks).reduce((sum, val) => sum + val, 0);
 

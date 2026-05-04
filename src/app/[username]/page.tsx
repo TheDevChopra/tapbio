@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { createClient } from "@/utils/supabase/server";
-import { Button } from "@/components/ui/button";
 import { ViewTracker } from "@/components/ViewTracker";
 import type { Metadata } from 'next';
 

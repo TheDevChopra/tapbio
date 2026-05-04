@@ -14,6 +14,7 @@ const BLOCK_TYPES = [
   { id: 'map', label: 'Map Location' }
 ]
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function BlockModal({ block, isOpen, onClose }: { block?: any, isOpen: boolean, onClose: () => void }) {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)

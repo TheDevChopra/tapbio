@@ -5,6 +5,7 @@ import { DraggableBlockList } from '@/components/DraggableBlockList'
 import { SettingsForm } from '@/components/SettingsForm'
 import { AnalyticsTab } from '@/components/AnalyticsTab'
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function DashboardTabs({ blocks, profile, analytics }: { blocks: any[], profile: any, analytics: { views: number, clicks: Record<string, number> } }) {
   const [activeTab, setActiveTab] = useState<'blocks' | 'settings' | 'analytics'>('blocks')
 
